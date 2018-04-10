@@ -32,6 +32,7 @@ class Action(GameProcess):
     Class Action is using to working with logic of game
     '''
     def __init__(self):
+		self.autoCheck = 0
         self.deck = GameProcess()
         self.spd = self.deck.show_pyramidal_deck()
         self.sfd = self.deck.show_flipping_deck()
